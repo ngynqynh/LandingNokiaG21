@@ -1,0 +1,62 @@
+.btn {
+  display: flex;
+  border: none;
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #fff;
+
+  &:hover, 
+  &:active,
+  &:focus {
+    color: #fff;
+  }
+
+  &--lg {
+    padding: 18px 0;
+
+    @media (max-width: 768px) {
+      padding: 14px 0;
+    }
+  }
+
+  &--sm {
+    padding: 10px 0;
+    // width: 157px;
+  }
+
+  &--red {
+    background: #cb1c22;
+  }
+
+  &--blue {
+    background: #0664f9;
+    max-width: 276px;
+
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &--mb {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: flex;
+      gap: 2px;
+      padding: 6px 0;
+
+      span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.box-container {
+    max-width: 1200px;
+    padding: 0 12px;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+        padding: 0 10px;
+    }
+}
+
+.box-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,44 @@
+.typo__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    background: radial-gradient(
+                47.51% 51.08% at 64.75% 69.35%,
+                rgba(255, 255, 255, 0.46) 19.27%,
+                rgba(255, 92, 229, 0.34) 100%
+            )
+            /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+        radial-gradient(221.03% 499% at -24.39% -45.25%, #2754ab 4.37%, rgba(13, 51, 189, 0) 62.34%)
+            /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+        linear-gradient(265.66deg, #3866ff 27.24%, #ceb2fc 94.07%),
+        radial-gradient(140.87% 246.04% at 49.8% -56.3%, #b2b5e1 45.47%, #462352 90.47%)
+            /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    background-blend-mode: overlay, normal, normal, normal;
+    margin-bottom: 24px;
+
+    @media (max-width: 768px) {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
+}
+
+.typo__content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #444b52;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

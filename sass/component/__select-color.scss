@@ -1,0 +1,89 @@
+.select-color {
+    display: flex;
+    justify-content: center;
+    // height: 24px;
+    .item {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 16px;
+        }
+        span {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            position: relative;
+            $size: -2px;
+            &:before {
+                content: "";
+                position: absolute;
+                left: $size;
+                right: $size;
+                top: $size;
+                bottom: $size;
+                border-radius: 50%;
+                border: 1px solid #cbd1d6;
+            }
+        }
+        &__text {
+            font-size: 20px;
+            line-height: 28px;
+            color: #fff;
+            margin-left: 12px;
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+                line-height: 20px;
+                margin-left: 4px;
+            }
+        }
+        &.active {
+            .item__text {
+                font-weight: 500;
+            }
+            span {
+                &:after {
+                    content: "\e801";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #fff;
+                    font-weight: 500;
+                    font-family: "icon";
+                    font-style: normal;
+                    font-weight: normal;
+                    speak: none;
+                    display: inline-block;
+                    text-decoration: inherit;
+                    text-align: center;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 1em;
+                    -webkit-font-smoothing: antialiased;
+                }
+                &:before {
+                    border: 1px solid #cb1c22;
+                }
+            }
+        }
+        &--blue {
+            span {
+                &:before {
+                    background: #011c77;
+                }
+            }
+        }
+        &--purple {
+            span {
+                &:before {
+                    background: #3d0376;
+                }
+            }
+        }
+    }
+}
